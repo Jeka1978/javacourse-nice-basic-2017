@@ -8,5 +8,13 @@ public class Main {
         String str = "java";
         str = str.toUpperCase();
         System.out.println("str = " + str);
+
+
+        ImmutablePerson person = new ImmutablePerson(12);
+        person = person.setAge(115);
+
+        MutablePerson mutablePerson = new MutablePerson();
+        mutablePerson.setAge(12);
+
     }
 }
