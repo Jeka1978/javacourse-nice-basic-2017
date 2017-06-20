@@ -20,6 +20,9 @@ public class MyTests {
 
     @Test
     public void testA() throws Exception {
+        double x=1.1;
+        double y = 1.3;
+        Assert.assertEquals(2.4,x+y,0.00001);
         //test code is here
     }
 

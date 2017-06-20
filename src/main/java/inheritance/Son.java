@@ -11,6 +11,12 @@ public class Son extends Father {
     }
 
     @Override
+    public void work() {
+        System.out.println(123);
+        System.out.println(123);
+    }
+
+    @Override
     public int getAge() {
 
         return super.getAge()*2;

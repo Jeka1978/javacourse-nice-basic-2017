@@ -9,6 +9,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+
         User user = new User("Jeka", 38, 12);
         System.out.println(user);
         sqrt(user.getAge());
