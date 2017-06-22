@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import static heroes.util.RandomUtil.getRandomBetween;
+
 /**
  * Created by Evegeny on 22/06/2017.
  */
@@ -27,9 +29,15 @@ public class CharacterFactoryImpl implements CharacterFactory {
 
     @Override
     public Character getRandomCharacter() throws IllegalAccessException, InstantiationException {
-        Class<? extends Character> characterClass = list.get(RandomUtil.getRandomBetween(0, list.size()));
+        Class<? extends Character> characterClass = list.get(getRandomBetween(0, list.size()));
         return characterClass.newInstance();
     }
+
+
+
+
+
+
 
     @Override
     public Character getConcreteCharacter(Class<? extends Character> type) throws IllegalAccessException, InstantiationException {
