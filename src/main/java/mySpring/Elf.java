@@ -11,4 +11,9 @@ public class Elf {
     private int hp;
     @InjectRandomInt(min = 30, max = 50)
     private int power;
+
+
+    @InjectRandomName
+    private String name;
+
 }
