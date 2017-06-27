@@ -3,7 +3,7 @@ package com.nice.data;
 /**
  * Created by Evegeny on 13/06/2017.
  */
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
     private int age;
 
@@ -29,5 +29,10 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return this.age-o.age;
     }
 }

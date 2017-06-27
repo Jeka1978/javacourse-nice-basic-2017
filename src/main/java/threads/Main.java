@@ -14,6 +14,7 @@ public class Main {
         BankService bankService = new BankService(bankAccount);
         Thread t1 = new Thread(bankService);
         Thread t2 = new Thread(clientService);
+        int x;
 
         t1.start();
         t2.start();
